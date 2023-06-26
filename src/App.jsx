@@ -3,11 +3,24 @@ import Inicio from './components/pages/Inicio';
 import Recetas from './components/pages/Recetas';
 import Favoritos from './components/pages/Favoritos';
 import { Route, Routes } from 'react-router-dom';
-import Aperitivos from './components/pages/categories/Aperitivos';
-import Desayunos from './components/pages/categories/Desayunos';
-import Entradas from './components/pages/categories/Entradas';
-import PlatosPrincipales from './components/pages/categories/PlatosPrincipales';
-import Postres from './components/pages/categories/Postres';
+import Canapes from './components/pages/categories/aperitivos/Canape';
+
+import Pinchos from './components/pages/categories/aperitivos/Pincho';
+import Dips from './components/pages/categories/aperitivos/Dips';
+import Huevos from './components/pages/categories/desayunos/Huevo';
+import Pancakes from './components/pages/categories/desayunos/Pancake';
+import Tostadas from './components/pages/categories/desayunos/Tostada';
+import Empanadas from './components/pages/categories/entradas/Empanada';
+import Ensaladas from './components/pages/categories/entradas/Ensalada';
+import Sopas from './components/pages/categories/entradas/Sopa';
+import Tapas from './components/pages/categories/entradas/Tapa';
+import Carnes from './components/pages/categories/platos-principales/Carne';
+import Pastas from './components/pages/categories/platos-principales/Pasta';
+import Pescados from './components/pages/categories/platos-principales/Pescado';
+import Pollo from './components/pages/categories/platos-principales/Pollo';
+import Vegetariano from './components/pages/categories/platos-principales/Vegetariano';
+import Pastel from './components/pages/categories/postres/Pastel';
+import Tarta from './components/pages/categories/postres/Tarta';
 function App() {
     return (
         <div className="container">
@@ -17,16 +30,86 @@ function App() {
                     <Route path="/recetas" element={<Recetas />} />
 
                     <Route
-                        path="categoria/aperitivos"
-                        element={<Aperitivos />}
+                        path="categoria/aperitivos/canapes"
+                        element={<Canapes />}
                     />
-                    <Route path="categoria/desayunos" element={<Desayunos />} />
-                    <Route path="categoria/entradas" element={<Entradas />} />
                     <Route
-                        path="categoria/platos-principales"
-                        element={<PlatosPrincipales />}
+                        path="categoria/aperitivos/dips"
+                        element={<Dips />}
                     />
-                    <Route path="categoria/postres" element={<Postres />} />
+                    <Route
+                        path="categoria/aperitivos/pinchos"
+                        element={<Pinchos />}
+                    />
+                    <Route
+                        path="categoria/desayunos/huevos"
+                        element={<Huevos />}
+                    />
+                    <Route
+                        path="categoria/desayunos/pancakes"
+                        element={<Pancakes />}
+                    />
+                    <Route
+                        path="categoria/desayunos/pinchos"
+                        element={<Pinchos />}
+                    />
+                    <Route
+                        path="categoria/desayunos/tostadas"
+                        element={<Tostadas />}
+                    />
+
+                    <Route
+                        path="categoria/entradas/canapes"
+                        element={<Canapes />}
+                    />
+                    <Route
+                        path="categoria/entradas/empanadas"
+                        element={<Empanadas />}
+                    />
+                    <Route
+                        path="categoria/entradas/ensaladas"
+                        element={<Ensaladas />}
+                    />
+                    <Route
+                        path="categoria/entradas/sopas"
+                        element={<Sopas />}
+                    />
+                    <Route
+                        path="categoria/entradas/tapas"
+                        element={<Tapas />}
+                    />
+
+                    <Route
+                        path="categoria/platos-principales/carnes"
+                        element={<Carnes />}
+                    />
+
+                    <Route
+                        path="categoria/platos-principales/pastas"
+                        element={<Pastas />}
+                    />
+                    <Route
+                        path="categoria/platos-principales/pescados"
+                        element={<Pescados />}
+                    />
+
+                    <Route
+                        path="categoria/platos-principales/pollo"
+                        element={<Pollo />}
+                    />
+                    <Route
+                        path="categoria/platos-principales/vegetariano"
+                        element={<Vegetariano />}
+                    />
+
+                    <Route
+                        path="categoria/postres/pasteles"
+                        element={<Pastel />}
+                    />
+                    <Route
+                        path="categoria/postres/tartas"
+                        element={<Tarta />}
+                    />
 
                     <Route path="/favoritos" element={<Favoritos />} />
                 </Route>
