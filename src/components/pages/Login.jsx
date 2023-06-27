@@ -12,7 +12,7 @@ const Login = () => {
       }}
     >
       <div
-        class="card"
+        className="card"
         style={{
           width: "500px",
           height: "300px",

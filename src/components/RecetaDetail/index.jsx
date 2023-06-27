@@ -1,4 +1,4 @@
-import PreviewReceta from "../../../public/preview.svg";
+import PreviewReceta from "../../../public/Ver-Receta.png";
 
 const RecetaDetail = () => {
   return (

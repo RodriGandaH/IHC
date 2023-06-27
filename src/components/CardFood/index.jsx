@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import StartIcon from "../../../public/star.svg";
 
-const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
+// eslint-disable-next-line react/prop-types
+const CardFood = ({title = "Card title", src = "public/receta1.svg" }) => {
   const navigate = useNavigate();
   return (
     <div

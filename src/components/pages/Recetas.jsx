@@ -14,7 +14,7 @@ function Recetas() {
         }}
       >
         {recetasPopulares.map((item) => {
-          return <CardFood title={item.title} src={item.src} />;
+          return <CardFood key={2} title={item.title} src={item.src} />;
         })}
       </div>
       <div
@@ -27,7 +27,7 @@ function Recetas() {
         }}
       >
         {recetasPostres.map((item) => {
-          return <CardFood title={item.title} src={item.src} />;
+          return <CardFood key= {2} title={item.title} src={item.src} />;
         })}
       </div>
     </div>
