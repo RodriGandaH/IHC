@@ -1,4 +1,8 @@
+import { recetasPopulares } from "../../utils/recetas";
 import CardFood from "../CardFood";
+import P1 from "../../../public/photo1.svg";
+import P2 from "../../../public/photo2.svg";
+import P3 from "../../../public/photo3.svg";
 
 function Inicio() {
   return (
@@ -36,17 +40,17 @@ function Inicio() {
             }}
           >
             <div>
-              <img src="public/photo1.svg" />
+              <img src={P1} />
             </div>
             <div>
-              <img src="public/photo2.svg" />
+              <img src={P2} />
             </div>
             <div
               style={{
                 width: "30px",
               }}
             >
-              <img src="public/photo3.svg" />
+              <img src={P3} />
             </div>
           </div>
         </div>
@@ -62,7 +66,7 @@ function Inicio() {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            marginBottom: "20px"
+            marginBottom: "20px",
           }}
         >
           <h5>Recetas Populares</h5>
@@ -84,13 +88,9 @@ function Inicio() {
           justifyContent: "space-between",
         }}
       >
-        <CardFood title="Almejas a la marinera" />
-        <CardFood title="Humus" src="public/humus.svg" />
-        <CardFood title="Pad thai (Thailandia)" src="public/pad.svg" />
-        <CardFood
-          title="La Bandera (Republica dominicana)"
-          src="public/bandera.svg"
-        />
+        {recetasPopulares.map((item) => (
+          <CardFood src={item.src} title={item.title} />
+        ))}
       </div>
     </div>
   );
