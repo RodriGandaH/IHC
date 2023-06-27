@@ -1,9 +1,16 @@
 import { Link, Outlet, useNavigate } from 'react-router-dom';
+import Breadcrumb from '../utils/Breadcrumb'
+import '../../src/utils/Breadcrumd.css'
 function Menu() {
     const navigate = useNavigate();
-    
+    const breadcrumbItems = [
+        { label: 'Inicio', url: '/' },
+        { label: 'recetas', url: '/recetas' },
+        { label: 'Categorias', url: '/products/category' },
+        { label: 'Favoritos', url: '/products/category/product' },
+      ];
     return (
-        <>
+        <>            
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
@@ -392,6 +399,7 @@ function Menu() {
                                     </li>
                                 </ul>
                             </li>
+                    
                             <li className="nav-item">
                                 <Link
                                     className="nav-link"
@@ -441,11 +449,14 @@ function Menu() {
                             </button>
                         </div>
                     </div>
+                    
                 </div>
+                
             </nav>
+            <Breadcrumb items={breadcrumbItems} />
             <Outlet />
+            
         </>
     );
 }
-
 export default Menu;

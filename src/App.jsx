@@ -4,7 +4,6 @@ import Recetas from './components/pages/Recetas';
 import Favoritos from './components/pages/Favoritos';
 import { Route, Routes } from 'react-router-dom';
 import Canapes from './components/pages/categories/aperitivos/Canape';
-
 import Pinchos from './components/pages/categories/aperitivos/Pincho';
 import Dips from './components/pages/categories/aperitivos/Dips';
 import Huevos from './components/pages/categories/desayunos/Huevo';
@@ -27,7 +26,9 @@ import Pastel from './components/pages/categories/postres/Pastel';
 import Tarta from './components/pages/categories/postres/Tarta';
 import Login from './components/pages/Login';
 import RecetaDetail from './components/RecetaDetail';
+
 function App() {
+
     return (
         <div className="container">
             <Routes>
@@ -36,7 +37,7 @@ function App() {
                     <Route path="/recetas" element={<Recetas />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/receta" element={<RecetaDetail />} />
-
+                    
                     <Route
                         path="categoria/aperitivos/canapes"
                         element={<Canapes />}
@@ -142,6 +143,7 @@ function App() {
                     <Route path="/favoritos" element={<Favoritos />} />
                 </Route>
             </Routes>
+            
         </div>
     );
 }
