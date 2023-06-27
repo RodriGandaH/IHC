@@ -1,5 +1,7 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 function Menu() {
+    const navigate = useNavigate();
+    
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -367,6 +369,9 @@ function Menu() {
                                 className="btn ms-3"
                                 type="submit"
                                 id="btn-iniciar-sesion"
+                                onClick={() => {
+                                    navigate("/login")
+                                }}
                             >
                                 Iniciar Sesión
                             </button>
