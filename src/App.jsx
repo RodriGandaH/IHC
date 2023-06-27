@@ -12,6 +12,10 @@ import Pancakes from './components/pages/categories/desayunos/Pancake';
 import Tostadas from './components/pages/categories/desayunos/Tostada';
 import Empanadas from './components/pages/categories/entradas/Empanada';
 import Ensaladas from './components/pages/categories/entradas/Ensalada';
+import Carnaval from './components/pages/categories/fechas-festivas/Carnaval';
+import DiaDeMuertos from './components/pages/categories/fechas-festivas/DiaDeMuertos';
+import Navidad from './components/pages/categories/fechas-festivas/Navidad';
+import SemanaSanta from './components/pages/categories/fechas-festivas/SemanaSanta';
 import Sopas from './components/pages/categories/entradas/Sopa';
 import Tapas from './components/pages/categories/entradas/Tapa';
 import Carnes from './components/pages/categories/platos-principales/Carne';
@@ -81,6 +85,26 @@ function App() {
                     <Route
                         path="categoria/entradas/tapas"
                         element={<Tapas />}
+                    />
+
+                    <Route
+                        path="categoria/fechas-festivas/carnaval"
+                        element={<Carnaval />}
+                    />
+
+                    <Route
+                        path="categoria/fechas-festivas/dia-de-los-muertos"
+                        element={<DiaDeMuertos />}
+                    />
+
+                    <Route
+                        path="categoria/fechas-festivas/navidad"
+                        element={<Navidad />}
+                    />
+
+                    <Route
+                        path="categoria/fechas-festivas/semana-santa"
+                        element={<SemanaSanta />}
                     />
 
                     <Route

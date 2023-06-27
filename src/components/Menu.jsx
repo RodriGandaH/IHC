@@ -1,7 +1,5 @@
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 function Menu() {
-    const navigate = useNavigate();
-    
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -234,6 +232,64 @@ function Menu() {
                                     <li className="dropdown dropend">
                                         <Link
                                             className="dropdown-item dropdown-toggle pt-0 pb-0"
+                                            id="entradas"
+                                            data-bs-auto-close="outside"
+                                            data-bs-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            Fechas festivas
+                                        </Link>
+                                        <ul className="dropdown-menu  pt-0 pb-0">
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/fechas-festivas/carnaval"
+                                                >
+                                                    Carnaval
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/fechas-festivas/dia-de-los-muertos"
+                                                >
+                                                    Dia de los muertos
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/fechas-festivas/navidad"
+                                                >
+                                                    Navidad
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/fechas-festivas/semana-santa"
+                                                >
+                                                    Semana santa
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <hr className="dropdown-divider m-0" />
+                                    </li>
+                                    <li className="dropdown dropend">
+                                        <Link
+                                            className="dropdown-item dropdown-toggle pt-0 pb-0"
                                             id="platos-principales"
                                             data-bs-auto-close="outside"
                                             data-bs-toggle="dropdown"
@@ -369,9 +425,6 @@ function Menu() {
                                 className="btn ms-3"
                                 type="submit"
                                 id="btn-iniciar-sesion"
-                                onClick={() => {
-                                    navigate("/login")
-                                }}
                             >
                                 Iniciar Sesión
                             </button>
