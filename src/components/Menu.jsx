@@ -228,6 +228,63 @@ function Menu() {
                                             </li>
                                         </ul>
                                     </li>
+
+                                    <li className="dropdown dropend">
+                                        <Link
+                                            className="dropdown-item dropdown-toggle pt-0 pb-0"
+                                            id="entradas"
+                                            data-bs-auto-close="outside"
+                                            data-bs-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            Fechas festivas 
+                                        </Link>
+                                        <ul className="dropdown-menu  pt-0 pb-0">
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/fechas_festivas/carnaval"
+                                                >
+                                                    Carnaval
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/entradas/empanadas"
+                                                >
+                                                    Dia de los muertos
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/entradas/ensaladas"
+                                                >
+                                                    Navidad
+                                                </Link>
+                                            </li>
+                                            <li className="m-0">
+                                                <hr className="dropdown-divider m-0" />
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    className="dropdown-item  pt-0 pb-0"
+                                                    to="/categoria/entradas/sopas"
+                                                >
+                                                    Semana Santa
+                                                </Link>
+                                            </li>                                                                                      
+                                        </ul>
+                                    </li>
+
                                     <li>
                                         <hr className="dropdown-divider m-0" />
                                     </li>
