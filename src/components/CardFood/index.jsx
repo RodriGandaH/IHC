@@ -1,3 +1,5 @@
+import StartIcon from "../../../public/star.svg";
+
 const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
   return (
     <div
@@ -25,7 +27,7 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
                 filter:
                   "invert(63%) sepia(48%) saturate(2841%) hue-rotate(6deg) brightness(106%) contrast(91%)",
               }}
-              src="public/star.svg"
+              src={StartIcon}
             />
             <img
               style={{
@@ -33,7 +35,7 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
                 filter:
                   "invert(63%) sepia(48%) saturate(2841%) hue-rotate(6deg) brightness(106%) contrast(91%)",
               }}
-              src="public/star.svg"
+              src={StartIcon}
             />
             <img
               style={{
@@ -41,7 +43,7 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
                 filter:
                   "invert(63%) sepia(48%) saturate(2841%) hue-rotate(6deg) brightness(106%) contrast(91%)",
               }}
-              src="public/star.svg"
+              src={StartIcon}
             />
             <img
               style={{
@@ -49,13 +51,13 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
                 filter:
                   "invert(63%) sepia(48%) saturate(2841%) hue-rotate(6deg) brightness(106%) contrast(91%)",
               }}
-              src="public/star.svg"
+              src={StartIcon}
             />
             <img
               style={{
                 marginRight: "5px",
               }}
-              src="public/star.svg"
+              src={StartIcon}
             />
           </div>
           <button className="btn btn-outline-success" id="btn-registrarse">
