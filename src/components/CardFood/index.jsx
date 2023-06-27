@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import StartIcon from "../../../public/star.svg";
 
 const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
+  const navigate = useNavigate();
   return (
     <div
       className="card"
@@ -60,7 +62,11 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
               src={StartIcon}
             />
           </div>
-          <button className="btn btn-outline-success" id="btn-registrarse">
+          <button
+            className="btn btn-outline-success"
+            id="btn-registrarse"
+            onClick={() => navigate("/receta")}
+          >
             Ver receta
           </button>
         </div>

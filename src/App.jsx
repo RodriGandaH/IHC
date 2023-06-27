@@ -22,6 +22,7 @@ import Vegetariano from './components/pages/categories/platos-principales/Vegeta
 import Pastel from './components/pages/categories/postres/Pastel';
 import Tarta from './components/pages/categories/postres/Tarta';
 import Login from './components/pages/Login';
+import RecetaDetail from './components/RecetaDetail';
 function App() {
     return (
         <div className="container">
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/" element={<Inicio />} />
                     <Route path="/recetas" element={<Recetas />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/receta" element={<RecetaDetail />} />
 
                     <Route
                         path="categoria/aperitivos/canapes"
