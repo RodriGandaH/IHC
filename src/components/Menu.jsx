@@ -93,9 +93,7 @@ function Menu() {
                           Canapés y bruschettas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item pt-0 pb-0"
@@ -104,9 +102,7 @@ function Menu() {
                           Dips y Salsas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item pt-0 pb-0"
@@ -117,9 +113,7 @@ function Menu() {
                       </li>
                     </ul>
                   </li>
-                  <li className="m-0">
-                    <hr className="dropdown-divider m-0" />
-                  </li>
+                  <div className="dropdown-divider m-0"></div> 
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-0 pb-0"
@@ -140,9 +134,7 @@ function Menu() {
                           Huevos
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -151,9 +143,7 @@ function Menu() {
                           Pancakes y waffles
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -162,9 +152,7 @@ function Menu() {
                           Pinchos y brochetas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -175,9 +163,9 @@ function Menu() {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider m-0" />
-                  </li>
+                  
+                  <div className="dropdown-divider m-0"></div> 
+                
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-0 pb-0"
@@ -198,9 +186,7 @@ function Menu() {
                           Canapés y bruschettas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -209,9 +195,7 @@ function Menu() {
                           Empanadas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -219,38 +203,30 @@ function Menu() {
                         >
                           Ensaladas
                         </Link>
-                      </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      </li>                      
+                        
+                      <div className="dropdown-divider m-0"></div>                      
+                      
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
                           to="/categoria/entradas/sopas"
-                        >                          
+                        >
                           Sopas
-                          
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />                        
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
                           to="/categoria/entradas/tapas"
                         >
-                          Tapas srera
+                          Tapas
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider m-0" />
-                  </li>
-                  <li className="m-0">
-                    <hr className="dropdown-divider m-0" />
-                  </li>
+                  <div className="dropdown-divider m-0"></div> 
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-1 pb-1"
@@ -271,9 +247,7 @@ function Menu() {
                           Carnaval
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -282,9 +256,7 @@ function Menu() {
                           Dia de los muertos
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -293,9 +265,7 @@ function Menu() {
                           Navidad
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -306,9 +276,7 @@ function Menu() {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider m-0" />
-                  </li>
+                  <div className="dropdown-divider m-0"></div> 
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-0 pb-0"
@@ -329,9 +297,7 @@ function Menu() {
                           Carnes
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -340,9 +306,7 @@ function Menu() {
                           Pastas
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -351,9 +315,7 @@ function Menu() {
                           Pescados y mariscos
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -362,9 +324,7 @@ function Menu() {
                           Pollo y aves
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"
@@ -375,9 +335,7 @@ function Menu() {
                       </li>
                     </ul>
                   </li>
-                  <li>
-                    <hr className="dropdown-divider m-0" />
-                  </li>
+                  <div className="dropdown-divider m-0"></div> 
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-0 pb-0"
@@ -398,9 +356,7 @@ function Menu() {
                           Pasteles
                         </Link>
                       </li>
-                      <li className="m-0">
-                        <hr className="dropdown-divider m-0" />
-                      </li>
+                      <div className="dropdown-divider m-0"></div> 
                       <li>
                         <Link
                           className="dropdown-item  pt-0 pb-0"

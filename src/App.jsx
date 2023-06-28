@@ -142,8 +142,7 @@ function App() {
 
                     <Route path="/favoritos" element={<Favoritos />} />
                 </Route>
-            </Routes>
-            
+            </Routes>            
         </div>
     );
 }
