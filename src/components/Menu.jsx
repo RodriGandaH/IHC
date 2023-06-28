@@ -1,6 +1,29 @@
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import Breadcrumbs from "../utils/Breadcrumbs";
+import "../../src/utils/Breadcrumd.css";
 function Menu() {
-    const navigate = useNavigate();
+    const navigate = useNavigate();    
+    const breadcrumbItems = [
+      { label: "Inicio", url: "/" },
+      { label: "Recetas", url: "/recetas" },
+      { label: "Categorias", url: "categoria/aperitivos/canapes" },
+      { label: "Favoritos", url: "/favoritos" },
+    ];
+  
+    // Obtener la URL
+    const currentUrl = window.location.href;
+  
+    // Extraer la sección de la URL
+    const currentSection = getCurrentSectionFromUrl(currentUrl);
+  
+    // Función para extraer la sección de la URL
+    function getCurrentSectionFromUrl(url) {
+      const path = new URL(url).pathname;
+  
+      const sections = path.split("/").filter((section) => section !== "");
+      console.log(sections);
+      return sections[sections.length - 1];
+    }
 
     return (
         <>
@@ -639,6 +662,7 @@ function Menu() {
                     </div>
                 </div>
             </nav>
+            <Breadcrumbs items={breadcrumbItems} currentSection={currentSection} />
             <Outlet />
         </>
     );
