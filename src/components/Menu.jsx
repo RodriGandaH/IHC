@@ -1,28 +1,44 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
-import Breadcrumbs from "../utils/Breadcrumbs";
-import "../../src/utils/Breadcrumd.css";
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import Breadcrumbs from '../utils/Breadcrumbs';
+import '../../src/utils/Breadcrumd.css';
+import { recetas as data } from '../recetas';
+console.log(data);
 function Menu() {
-    const navigate = useNavigate();    
+    const navigate = useNavigate();
+    const [searchQuery, setSearchQuery] = useState('');
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        if (searchQuery.trim() !== '') {
+            const resultados = data.filter((receta) =>
+                receta.nombre.toLowerCase().includes(searchQuery.toLowerCase())
+            );
+            navigate('/buscar', { state: { results: resultados } });
+            console.log(resultados);
+        }
+    };
+
     const breadcrumbItems = [
-      { label: "Inicio", url: "/" },
-      { label: "Recetas", url: "/recetas" },
-      { label: "Categorias", url: "categoria/aperitivos/canapes" },
-      { label: "Favoritos", url: "/favoritos" },
+        { label: 'Inicio', url: '/' },
+        { label: 'Recetas', url: '/recetas' },
+        { label: 'Categorias', url: 'categoria/aperitivos/canapes' },
+        { label: 'Favoritos', url: '/favoritos' },
     ];
-  
+
     // Obtener la URL
     const currentUrl = window.location.href;
-  
+
     // Extraer la sección de la URL
     const currentSection = getCurrentSectionFromUrl(currentUrl);
-  
+
     // Función para extraer la sección de la URL
     function getCurrentSectionFromUrl(url) {
-      const path = new URL(url).pathname;
-  
-      const sections = path.split("/").filter((section) => section !== "");
-      console.log(sections);
-      return sections[sections.length - 1];
+        const path = new URL(url).pathname;
+
+        const sections = path.split('/').filter((section) => section !== '');
+        console.log(sections);
+        return sections[sections.length - 1];
     }
 
     return (
@@ -624,6 +640,7 @@ function Menu() {
                         <form
                             className="d-flex align-items-center mb-2 mb-lg-0"
                             role="search"
+                            onSubmit={handleSearch} // Agrega el evento onSubmit al formulario
                         >
                             <input
                                 className="form-control me-2 bg-light"
@@ -631,6 +648,8 @@ function Menu() {
                                 placeholder="Buscar..."
                                 aria-label="Buscar"
                                 id="buscar"
+                                value={searchQuery} // Asigna el valor del input a searchQuery
+                                onChange={(e) => setSearchQuery(e.target.value)} // Actualiza searchQuery cuando el usuario escribe en el input
                             ></input>
                             <button
                                 className="btn"
@@ -662,7 +681,10 @@ function Menu() {
                     </div>
                 </div>
             </nav>
-            <Breadcrumbs items={breadcrumbItems} currentSection={currentSection} />
+            <Breadcrumbs
+                items={breadcrumbItems}
+                currentSection={currentSection}
+            />
             <Outlet />
         </>
     );
