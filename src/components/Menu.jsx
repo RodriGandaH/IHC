@@ -59,7 +59,7 @@ function Menu() {
                                 <ul className="dropdown-menu pt-0 pb-0">
                                     <div className="d-flex justify-content-between">
                                         <div>
-                                            <li className="dropdown dropend">
+                                            <li className="dropdown dropend me-5">
                                                 <Link
                                                     className="dropdown-item dropdown-toggle pt-0 pb-0"
                                                     id="aperitivos"
@@ -70,7 +70,10 @@ function Menu() {
                                                 >
                                                     Aperitivos
                                                 </Link>
-                                                <ul className="dropdown-menu pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu pt-0 pb-0"
+                                                    id="lista-aperitivos"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item pt-0 pb-0"
@@ -145,7 +148,10 @@ function Menu() {
                                                 >
                                                     Desayunos
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-desayunos"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -230,7 +236,10 @@ function Menu() {
                                                 >
                                                     Entradas
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-ensaladas"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -331,7 +340,10 @@ function Menu() {
                                                 >
                                                     Fechas festivas
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-fechas-festivas"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -417,7 +429,10 @@ function Menu() {
                                                 >
                                                     Platos Principales
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-platos-principales"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -520,7 +535,10 @@ function Menu() {
                                                 >
                                                     Postres
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-postres"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
