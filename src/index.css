@@ -93,22 +93,3 @@
 :has(> #tool-tip):hover #tool-tip {
     opacity: 1;
 }
-
-#lista-aperitivos {
-    margin-left: 74px;
-}
-#lista-desayunos {
-    margin-left: 68px;
-}
-#lista-ensaladas {
-    margin-left: 84px;
-}
-#lista-fechas-festivas {
-    margin-left: 41px;
-}
-#lista-platos-principales {
-    margin-left: 23px;
-}
-#lista-postres {
-    margin-left: 94px;
-}
