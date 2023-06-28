@@ -11,12 +11,12 @@ import Pancakes from './components/pages/categories/desayunos/Pancake';
 import Tostadas from './components/pages/categories/desayunos/Tostada';
 import Empanadas from './components/pages/categories/entradas/Empanada';
 import Ensaladas from './components/pages/categories/entradas/Ensalada';
+import Carnaval from './components/pages/categories/fechas-festivas/Carnaval';
+import Navidad from './components/pages/categories/fechas-festivas/Navidad';
+import SemanaSanta from './components/pages/categories/fechas-festivas/SemanaSanta';
 import Sopas from './components/pages/categories/entradas/Sopa';
 import Tapas from './components/pages/categories/entradas/Tapa';
-import Carnaval from './components/pages/categories/fechas_festivas/Navidad'
 import DiaDeLosMuertos from './components/pages/categories/fechas_festivas/Dia_de_los_muertos'
-import Navidad from './components/pages/categories/fechas_festivas/Navidad'
-import SemanaSanta from './components/pages/categories/fechas_festivas/Semana_santa'
 import Carnes from './components/pages/categories/platos-principales/Carne';
 import Pastas from './components/pages/categories/platos-principales/Pasta';
 import Pescados from './components/pages/categories/platos-principales/Pescado';
