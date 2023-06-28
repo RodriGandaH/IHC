@@ -252,7 +252,9 @@ function Menu() {
                       </li>
                     </ul>
                   </li>
-
+                  <li className="m-0">
+                        <hr className="dropdown-divider m-0" />
+                      </li>
                   <li className="dropdown dropend">
                     <Link
                       className="dropdown-item dropdown-toggle pt-0 pb-0"
