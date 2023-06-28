@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const routes = [
   { path: '/users/:userId', breadcrumb: 'Example 1' },
-  { path: '/data', breadcrumb: 'Example 2' }
+  { path: '/Inicio', breadcrumb: 'Example 2' }
 ];  
 
 function Breadcrumbs() {
@@ -22,5 +22,4 @@ function Breadcrumbs() {
     </nav>
   );
 }
-
 export default Breadcrumbs;
