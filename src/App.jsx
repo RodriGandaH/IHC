@@ -16,7 +16,7 @@ import Navidad from './components/pages/categories/fechas-festivas/Navidad';
 import SemanaSanta from './components/pages/categories/fechas-festivas/SemanaSanta';
 import Sopas from './components/pages/categories/entradas/Sopa';
 import Tapas from './components/pages/categories/entradas/Tapa';
-import DiaDeLosMuertos from './components/pages/categories/fechas_festivas/Dia_de_los_muertos'
+import DiaDeLosMuertos from './components/pages/categories/fechas_festivas/Dia_de_los_muertos';
 import Carnes from './components/pages/categories/platos-principales/Carne';
 import Pastas from './components/pages/categories/platos-principales/Pasta';
 import Pescados from './components/pages/categories/platos-principales/Pescado';
@@ -26,9 +26,9 @@ import Pastel from './components/pages/categories/postres/Pastel';
 import Tarta from './components/pages/categories/postres/Tarta';
 import Login from './components/pages/Login';
 import RecetaDetail from './components/RecetaDetail';
+import RecetasBuscador from './components/RecetasBuscador';
 
 function App() {
-
     return (
         <div className="container">
             <Routes>
@@ -37,7 +37,8 @@ function App() {
                     <Route path="/recetas" element={<Recetas />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/receta" element={<RecetaDetail />} />
-                    
+                    <Route path="/buscar" element={<RecetasBuscador />} />
+
                     <Route
                         path="categoria/aperitivos/canapes"
                         element={<Canapes />}
@@ -92,7 +93,7 @@ function App() {
                         path="categoria/fechas_festivas/Carnaval"
                         element={<Carnaval />}
                     />
-                    
+
                     <Route
                         path="categoria/fechas_festivas/DiaDeLosMuertos"
                         element={<DiaDeLosMuertos />}
@@ -105,7 +106,7 @@ function App() {
 
                     <Route
                         path="categoria/fechas_festivas/SemanaSanta"
-                        element={<SemanaSanta/>}
+                        element={<SemanaSanta />}
                     />
 
                     <Route
@@ -142,7 +143,7 @@ function App() {
 
                     <Route path="/favoritos" element={<Favoritos />} />
                 </Route>
-            </Routes>            
+            </Routes>
         </div>
     );
 }
