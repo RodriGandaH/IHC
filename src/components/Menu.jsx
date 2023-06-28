@@ -1,14 +1,6 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
-import Breadcrumbs from "../utils/Breadcrumbs";
-import "../../src/utils/Breadcrumd.css";
+import { Link, Outlet, useNavigate } from 'react-router-dom';
 function Menu() {
-  const navigate = useNavigate();
-  const breadcrumbItems = [
-    { label: "Inicio", url: "/" },
-    { label: "Recetas", url: "/recetas" },
-    { label: "Categorias", url: "categoria/aperitivos/canapes" },
-    { label: "Favoritos", url: "/favoritos" },
-  ];
+    const navigate = useNavigate();
 
     return (
         <>
@@ -67,7 +59,7 @@ function Menu() {
                                 <ul className="dropdown-menu pt-0 pb-0">
                                     <div className="d-flex justify-content-between">
                                         <div>
-                                            <li className="dropdown dropend">
+                                            <li className="dropdown dropend me-5">
                                                 <Link
                                                     className="dropdown-item dropdown-toggle pt-0 pb-0"
                                                     id="aperitivos"
@@ -78,7 +70,10 @@ function Menu() {
                                                 >
                                                     Aperitivos
                                                 </Link>
-                                                <ul className="dropdown-menu pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu pt-0 pb-0"
+                                                    id="lista-aperitivos"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item pt-0 pb-0"
@@ -153,7 +148,10 @@ function Menu() {
                                                 >
                                                     Desayunos
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-desayunos"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -238,7 +236,10 @@ function Menu() {
                                                 >
                                                     Entradas
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-ensaladas"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -339,7 +340,10 @@ function Menu() {
                                                 >
                                                     Fechas festivas
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-fechas-festivas"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -425,7 +429,10 @@ function Menu() {
                                                 >
                                                     Platos Principales
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-platos-principales"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -528,7 +535,10 @@ function Menu() {
                                                 >
                                                     Postres
                                                 </Link>
-                                                <ul className="dropdown-menu  pt-0 pb-0">
+                                                <ul
+                                                    className="dropdown-menu  pt-0 pb-0"
+                                                    id="lista-postres"
+                                                >
                                                     <li>
                                                         <Link
                                                             className="dropdown-item  pt-0 pb-0"
@@ -577,9 +587,61 @@ function Menu() {
                                     </div>
                                 </ul>
                             </li>
-      <Breadcrumbs items={breadcrumbItems} currentSection={currentSection} />
-      <Outlet />
-    </>
-  );
+
+                            <li className="nav-item">
+                                <Link
+                                    className="nav-link"
+                                    to="/favoritos"
+                                    id="favoritos"
+                                >
+                                    Favoritos
+                                </Link>
+                            </li>
+                        </ul>
+                        <form
+                            className="d-flex align-items-center mb-2 mb-lg-0"
+                            role="search"
+                        >
+                            <input
+                                className="form-control me-2 bg-light"
+                                type="search"
+                                placeholder="Buscar..."
+                                aria-label="Buscar"
+                                id="buscar"
+                            ></input>
+                            <button
+                                className="btn"
+                                type="submit"
+                                id="btn-buscar"
+                            >
+                                Buscar
+                            </button>
+                        </form>
+                        <div className="d-flex justify-content-around">
+                            <button
+                                className="btn ms-3"
+                                type="submit"
+                                id="btn-iniciar-sesion"
+                                onClick={() => {
+                                    navigate('/login');
+                                }}
+                            >
+                                Iniciar Sesión
+                            </button>
+                            <button
+                                className="btn btn-outline-success ms-3"
+                                type="submit"
+                                id="btn-registrarse"
+                            >
+                                Registrarse
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <Outlet />
+        </>
+    );
 }
+
 export default Menu;
