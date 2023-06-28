@@ -9,9 +9,7 @@ const routes = [
 ];  
 
 function Breadcrumbs() {
-  const breadcrumbs = useBreadcrumbs(routes);
-  console.log(breadcrumbs)
-
+  const breadcrumbs = useBreadcrumbs(routes);  
   return (
     <nav>
       {breadcrumbs.map(({ match, breadcrumb }) => (
