@@ -31,7 +31,7 @@ function Inicio() {
             </button>
           </div>
         </div>
-        <div className="col-sm-6">
+        <div className="col-sm-5 col-md-4 col-lg-5" >
           <div
             style={{
               display: "flex",
@@ -40,17 +40,17 @@ function Inicio() {
             }}
           >
             <div>
-              <img src={P1} />
+              <img className="d-none d-sm-block"  src={P1} />
             </div>
             <div>
-              <img src={P2} />
+              <img className="d-none d-sm-block"  src={P2} />
             </div>
-            <div
+            <div 
               style={{
                 width: "30px",
               }}
             >
-              <img src={P3} />
+              <img className=" d-none d-lg-block "  src={P3}  />
             </div>
           </div>
         </div>
@@ -88,9 +88,15 @@ function Inicio() {
           justifyContent: "space-between",
         }}
       >
-        {recetasPopulares.map((item) => (
-          <CardFood key={2} src={item.src} title={item.title} />
-        ))}
+        <div className="row">
+          {recetasPopulares.map((item) => (
+            <>            
+            <div className="col-sm-12 col-md-5 col-lg-3">
+            <CardFood key={1} src={item.src} title={item.title} /> 
+            </div>                   
+            </>                
+            ))}
+        </div>                       
       </div>
     </div>
   );
