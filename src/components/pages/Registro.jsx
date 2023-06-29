@@ -173,7 +173,14 @@ const Registro = () => {
                                 type="submit"
                                 id="btn-registrarse"
                                 onClick={handleLogin}
-                                disabled={!username || !password}
+                                disabled={
+                                    !username ||
+                                    !password ||
+                                    !nombre ||
+                                    !apellido ||
+                                    !fechaNacimiento ||
+                                    !correo
+                                }
                             >
                                 Crear cuenta
                             </button>
