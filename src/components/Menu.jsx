@@ -41,6 +41,8 @@ function Menu() {
         return sections[sections.length - 1];
     }
 
+    const loggedUser = localStorage.getItem("USER");
+
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -648,25 +650,39 @@ function Menu() {
                                 Buscar
                             </button>
                         </form>
-                        <div className="d-flex justify-content-around">
-                            <button
-                                className="btn ms-3"
-                                type="submit"
-                                id="btn-iniciar-sesion"
-                                onClick={() => {
-                                    navigate('/login');
-                                }}
-                            >
-                                Iniciar Sesión
-                            </button>
-                            <button
-                                className="btn btn-outline-success ms-3"
-                                type="submit"
-                                id="btn-registrarse"
-                            >
-                                Registrarse
-                            </button>
-                        </div>
+                        {
+                            !loggedUser ?
+                            <div className="d-flex justify-content-around">
+                                <button
+                                    className="btn ms-3"
+                                    type="submit"
+                                    id="btn-iniciar-sesion"
+                                    onClick={() => {
+                                        navigate('/login');
+                                    }}
+                                >
+                                    Iniciar Sesión
+                                </button>
+                                <button
+                                    className="btn btn-outline-success ms-3"
+                                    type="submit"
+                                    id="btn-registrarse"
+                                >
+                                    Registrarse
+                                </button>
+                            </div> : <>
+                                <button
+                                    className="btn ms-3"
+                                    type="submit"
+                                    id="btn-iniciar-sesion"
+                                    onClick={() => {
+                                        localStorage.removeItem("USER");
+                                        navigate('/');
+                                    }}
+                                >
+                                    Logout
+                                </button></>
+                        }
                     </div>
                 </div>
             </nav>
