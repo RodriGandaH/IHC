@@ -8,23 +8,30 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
     <div
       className="card"
       style={{
-        width: "18rem",        
+        width: "18rem",
         borderTopLeftRadius: "20px",
         borderTopRightRadius: "20px",
-        marginBottom:'20px'
+        marginBottom: "20px",
       }}
     >
-      <img
-        className="card-img-top"
-        src={src}
-        alt="Card image cap"
+      <div
         style={{
-          width: "100%" ,
-          overflow: "hidden",
+          height: "178px",
         }}
-      />
+      >
+        <img
+          className="card-img-top"
+          src={src}
+          alt="Card image cap"
+          style={{
+            width: "100%",
+            overflow: "hidden",
+            height: "100%",
+          }}
+        />
+      </div>
       <div className="card-body">
-        <h6 className="card-title text-uppercase font-weight-bold text-truncate ">{title}</h6>
+        <h6 className="card-title font-weight-bold text-truncate ">{title}</h6>
 
         <div
           style={{
