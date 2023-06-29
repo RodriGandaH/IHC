@@ -17,7 +17,7 @@ function Canapes() {
           
             {aperitivosCanappesBruschettas.map((item) => {
               return <>
-              <div className="col-sm-12 col-md-5 col-lg-3">
+              <div className="col-sm-12 col-md-5 col-lg-4">
               <CardFood key={2} title={item.title} src={item.src} />
               </div>              
               </>               

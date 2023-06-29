@@ -90,9 +90,12 @@ const ViewRecipe = () => {
             >
               <img src={ImgReceta} />
               <div>
-                <div>Tiempo total __________40 m</div>
-                <div>Elaboracion___________10 m</div>
-                <div>Coccion______________30 m</div>
+                <div>Tiempo total _______40 m</div>
+                <hr />
+                <div>Elaboracion_________10 m</div>
+                <hr />
+                <div>Coccion_____________30 m</div>
+                <hr />
                 <div>Dificultad: Fácil</div>
               </div>
             </div>

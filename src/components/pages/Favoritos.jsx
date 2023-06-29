@@ -3,19 +3,19 @@ import CardFood from "../CardFood";
 
 function Favoritos() {
   return (
-    <div
-      className="cards-recetas"
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        marginTop: "5%",
-        marginLeft: "10px",
-      }}
-    >
+    <div className="card " style={{ padding: "2em", marginTop: "2em" }}>
+    <div className="row">
       {recetasFav.map((item) => {
-        return <CardFood title={item.title} src={item.src} />;
+        return (
+          <>
+            <div className="col-sm-12 col-md-5 col-lg-4">
+              <CardFood key={2} title={item.title} src={item.src} />
+            </div>
+          </>
+        );
       })}
     </div>
+  </div>
   );
 }
 
