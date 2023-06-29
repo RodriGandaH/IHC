@@ -13,9 +13,18 @@ function Dips() {
               marginLeft: "10px",
             }}
           >
-            {aperitivosDipsSalsas.map((item) => {
-              return <CardFood key={2} title={item.title} src={item.src} />;
-            })}
+            <div className="row">
+          {aperitivosDipsSalsas.map((item) => {
+            return (
+              <>
+                <div className="col-sm-12 col-md-5 col-lg-3">
+                  <CardFood key={2} title={item.title} src={item.src} />  
+                </div>
+              </>
+            );
+          })}
+        </div>
+            
           </div>
         </div>
       );

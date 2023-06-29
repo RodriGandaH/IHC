@@ -63,10 +63,46 @@ export const recetasPostres = [
 ]
 /*aqui estaran todos los aperitivos*/ 
 export const aperitivosCanappesBruschettas = [
+    {
+        title: "Paté de mejillones",
+        src: "https://i.blogs.es/84fa2b/pate_mejillones/1366_2000.jpg"
+    },
+    {
+        title: "Hojaldres y otras masas",
+        src: "https://i.blogs.es/0e72d9/aperitivos-hojaldre/1366_2000.jpg"
+    },
+    {
+        title: "Tacos de salmón marinado con su piel",
+        src: "https://i.blogs.es/b09f0c/salmon_marinado_cebollino/1366_2000.jpg"
+    },
+    {
+        title: "Endivias rellenas de manzana y aguacate, receta ligera",
+        src: "https://i.blogs.es/836806/650_1000_endivias_con_manzana_y_aguacate_ligera/1366_2000.jpg"
+    },
    
 ]
 
 export const aperitivosDipsSalsas = [
+    {
+        title: "Rillette de sardinas",
+        src: "https://i.blogs.es/4965d3/02-rillete-de-sardinas/1366_2000.jpeg"
+    },
+    {
+        title: "Crema untable de queso y pimientos del piquillo",
+        src: "https://i.blogs.es/86981b/03-crema-untable-de-queso-y-pimientos-del-piquillo/1366_2000.jpeg"
+    },
+    {
+        title: "Tershi o paté cremoso de calabaza y ajo",
+        src: "https://i.blogs.es/d286ab/04-tershi-o-pate-cremoso-de-calabaza-y-ajo/1366_2000.jpeg"
+    },
+    {
+        title: "Dip (muy) picante de anacardos y chile chipotle",
+        src: "https://i.blogs.es/714763/05-dip-muy-picante-de-anacardos-y-chile-chipotle/1366_2000.jpeg"
+    },
+    {
+        title: "Labneh, dip de yogur de Oriente Medio",
+        src: "https://i.blogs.es/67d01b/06-labneh/1366_2000.jpeg"
+    },
 
 ]
 
@@ -75,7 +111,7 @@ export const aperitivosPinchosBrochetas=[
         title: "Brochetas de melón con salmón",
         Categoria:"Aperitivos",
         subCategoria:"Canapes y Bruschettas",
-        src: Tira,
+        src: "https://i.blogs.es/feefcc/brochetas-salmon/1366_2000.jpg",
         ingredientes:"Salmón fresco (lingotes limpios) 200 g Melón (sin piel ni semillas) 200 g Escamas de sal al gusto Aceite de oliva virgen extra para cocinar el pescadoLechugas mezcladas para servir",
         dificultad:"Facil",
         Tiempo:"Tiempo total 15 m Elaboración 10 m Cocción 5 m",
@@ -83,19 +119,19 @@ export const aperitivosPinchosBrochetas=[
     },
     {
         title: "Brochetas de langostinos picantes y mango",
-        src: R5
+        src: "https://i.blogs.es/480978/brochetas-langostinos/1366_2000.jpg"
     },
     {
         title: "Brochetas de langostinos con papaya",
-        src: R6
+        src: "https://i.blogs.es/b8e4a9/brochetas-papaya/1366_2000.jpg"
     },
     {
         title: "Brochetas de tomate y queso",
-        src: R5
+        src: "https://i.blogs.es/9b74b8/brochetas-queso/1366_2000.jpg"
     },
     {
         title: "Brochetas de melón con crujiente de jamón",
-        src: R5
+        src: "https://i.blogs.es/fca604/brochetas-jamon/1366_2000.jpg"
     },
 ]
 /*Aqui estaran todos los desayunos.*/ 
