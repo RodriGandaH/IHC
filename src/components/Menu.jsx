@@ -41,7 +41,7 @@ function Menu() {
         return sections[sections.length - 1];
     }
 
-    const loggedUser = localStorage.getItem("USER");
+    const loggedUser = localStorage.getItem('USER');
 
     return (
         <>
@@ -211,7 +211,7 @@ function Menu() {
                                                         >
                                                             Pancakes y waffles
                                                         </Link>
-                                                    </li>                                                  
+                                                    </li>
                                                     <li className="m-0">
                                                         <hr className="dropdown-divider m-0" />
                                                     </li>
@@ -650,8 +650,7 @@ function Menu() {
                                 Buscar
                             </button>
                         </form>
-                        {
-                            !loggedUser ?
+                        {!loggedUser ? (
                             <div className="d-flex justify-content-around">
                                 <button
                                     className="btn ms-3"
@@ -667,22 +666,28 @@ function Menu() {
                                     className="btn btn-outline-success ms-3"
                                     type="submit"
                                     id="btn-registrarse"
+                                    onClick={() => {
+                                        navigate('/registrarse');
+                                    }}
                                 >
                                     Registrarse
                                 </button>
-                            </div> : <>
+                            </div>
+                        ) : (
+                            <>
                                 <button
                                     className="btn ms-3"
                                     type="submit"
                                     id="btn-iniciar-sesion"
                                     onClick={() => {
-                                        localStorage.removeItem("USER");
+                                        localStorage.removeItem('USER');
                                         navigate('/');
                                     }}
                                 >
                                     Logout
-                                </button></>
-                        }
+                                </button>
+                            </>
+                        )}
                     </div>
                 </div>
             </nav>

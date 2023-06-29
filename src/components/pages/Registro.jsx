@@ -1,10 +1,14 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 
-const Login = () => {
+const Registro = () => {
     const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [nombre, setNombre] = useState('');
+    const [apellido, setApellido] = useState('');
+    const [fechaNacimiento, setFechaNacimiento] = useState('');
+    const [correo, setCorreo] = useState('');
     const handleLogin = () => {
         localStorage.setItem('USER', username);
         navigate('/');
@@ -15,14 +19,14 @@ const Login = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                marginTop: '15%',
+                marginTop: '1%',
             }}
         >
             <div
                 className="card"
                 style={{
                     width: '500px',
-                    height: '300px',
+                    height: '500px',
                     display: 'flex',
                     alignItems: 'center',
                     padding: '20px',
@@ -39,6 +43,74 @@ const Login = () => {
                             width: '350px',
                         }}
                     >
+                        <div className="form-group">
+                            <input
+                                style={{
+                                    borderRadius: '20px',
+                                    marginBottom: '20px',
+                                }}
+                                type="text"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Nombres"
+                                value={nombre}
+                                onChange={(event) =>
+                                    setNombre(event.target.value)
+                                }
+                            />
+                        </div>
+                        <div className="form-group">
+                            <input
+                                style={{
+                                    borderRadius: '20px',
+                                    marginBottom: '20px',
+                                }}
+                                type="text"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Apellidos"
+                                value={apellido}
+                                onChange={(event) =>
+                                    setApellido(event.target.value)
+                                }
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <input
+                                style={{
+                                    borderRadius: '20px',
+                                    marginBottom: '20px',
+                                }}
+                                type="date"
+                                required
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                value={fechaNacimiento}
+                                onChange={(event) =>
+                                    setFechaNacimiento(event.target.value)
+                                }
+                            />
+                        </div>
+                        <div className="form-group">
+                            <input
+                                style={{
+                                    borderRadius: '20px',
+                                    marginBottom: '20px',
+                                }}
+                                type="email"
+                                className="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="correo@email.com"
+                                value={correo}
+                                onChange={(event) =>
+                                    setCorreo(event.target.value)
+                                }
+                            />
+                        </div>
                         <div className="form-group">
                             <input
                                 style={{
@@ -80,17 +152,15 @@ const Login = () => {
                             }}
                         >
                             <div>
-                                {' '}
                                 <Link
                                     style={{
                                         color: '#696868',
                                     }}
-                                    to="/registrarse"
+                                    to="/login"
                                 >
-                                    Crear cuenta
+                                    ¿Ya tienes una cuenta?
                                 </Link>
                             </div>
-                            <div>{`¿Se olvido la contraseña?`}</div>
                         </div>
                         <div
                             style={{
@@ -105,7 +175,7 @@ const Login = () => {
                                 onClick={handleLogin}
                                 disabled={!username || !password}
                             >
-                                Login
+                                Crear cuenta
                             </button>
                         </div>
                     </form>
@@ -115,4 +185,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Registro;
