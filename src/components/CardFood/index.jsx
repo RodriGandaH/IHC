@@ -19,8 +19,7 @@ const CardFood = ({ title = "Card title", src = "public/receta1.svg" }) => {
         src={src}
         alt="Card image cap"
         style={{
-          width: "270px" ,
-          height: "200px" ,
+          width: "100%" ,
           overflow: "hidden",
         }}
       />

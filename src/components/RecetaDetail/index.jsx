@@ -1,11 +1,12 @@
-import PreviewReceta from "../../../public/Ver-Receta.png";
+import ViewRecipe from "../ViewRecipe";
+
 
 const RecetaDetail = () => {
   return (
     <div style={{
         marginLeft: "10px"
     }}>
-      <img  src={PreviewReceta}/>
+      <ViewRecipe />
     </div>
   );
 };

@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const handleLogin = () => {
+    localStorage.setItem("USER", username);
+    navigate("/");
+  };
   return (
     <div
       style={{
@@ -43,6 +50,8 @@ const Login = () => {
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 placeholder="Username"
+                value={username}
+                onChange={(event) => setUsername(event.target.value)}
               />
             </div>
             <div className="form-group">
@@ -54,6 +63,8 @@ const Login = () => {
                 className="form-control"
                 id="exampleInputPassword1"
                 placeholder="Password"
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
               />
             </div>
             <div
@@ -77,7 +88,8 @@ const Login = () => {
                 className="btn btn-outline-success"
                 type="submit"
                 id="btn-registrarse"
-                onClick={() => navigate("/")}
+                onClick={handleLogin}
+                disabled={!username || !password}
               >
                 Login
               </button>
