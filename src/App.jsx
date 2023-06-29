@@ -27,6 +27,7 @@ import Tarta from './components/pages/categories/postres/Tarta';
 import Login from './components/pages/Login';
 import RecetaDetail from './components/RecetaDetail';
 import RecetasBuscador from './components/RecetasBuscador';
+import Registro from './components/pages/Registro';
 
 function App() {
     return (
@@ -36,6 +37,7 @@ function App() {
                     <Route path="/" element={<Inicio />} />
                     <Route path="/recetas" element={<Recetas />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/registrarse" element={<Registro />} />
                     <Route path="/receta" element={<RecetaDetail />} />
                     <Route path="/buscar" element={<RecetasBuscador />} />
 
