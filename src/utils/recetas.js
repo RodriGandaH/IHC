@@ -169,7 +169,7 @@ export const desayunosPancekesWaffes=[
         title: "Waffles de Multigrano con Nectarinas",
         Categoria:"Aperitivos",
         subCategoria:"Canapes y Bruschettas",
-        src: "https://www.elmejornido.com/sites/g/files/jgfbjl316/files/styles/gdn_recipe_cards_ii/public/recipe-thumbnail/84863-2020_03_18T11_56_41_mrs_ImageRecipes_146406lrg.jpg.webp?itok=TPHkmh1V",
+        src: "https://saboryestilo.com.mx/wp-content/uploads/2022/07/waffles-multigrano.jpg",
         ingredientes:"Salmón fresco (lingotes limpios) 200 g Melón (sin piel ni semillas) 200 g Escamas de sal al gusto Aceite de oliva virgen extra para cocinar el pescadoLechugas mezcladas para servir",
         dificultad:"Facil",
         Tiempo:"Tiempo total 15 m Elaboración 10 m Cocción 5 m",
@@ -177,11 +177,16 @@ export const desayunosPancekesWaffes=[
     },
     {
         title: "Panqueques de Avena y Chocolate",
-        src: "https://www.elmejornido.com/sites/g/files/jgfbjl316/files/styles/gdn_recipe_cards_ii/public/recipe-thumbnail/96408-2020_04_29T15_09_17_mrs_ImageRecipes_146425lrg.jpg.webp?itok=4AVF-6Gx"
+        src: "https://anabanana.gt/wp-content/uploads/2016/12/IMG_3506-e1481597317164.jpg"
     },
     {
         title: "Panqueques Fáciles de Canela y Vainilla",
-        src: "https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/gdn_recipe_cards_ii/public/thumbnail/98180-2020_03_02T09_15_03_mrs_ImageRecipes_140471lrg.jpg.webp?itok=lN4opnBF"
+        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShq1oiXio2hKWD5KJ_awSof77KmhrRlKC5lMnCo64sMxErak8q7KNnElS7QKSAEoq8cic&usqp=CAU"
+    },
+
+    {
+        title: "Panqueques Fáciles de avena y leche condensada",
+        src: "https://www.laurafuentes.soy/wp-content/uploads/2016/08/Cinnabon_pancakes_13.jpg"
     },
 ]
 export const desayunosTostadasBolleria=[
