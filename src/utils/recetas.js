@@ -135,5 +135,81 @@ export const aperitivosPinchosBrochetas=[
     },
 ]
 /*Aqui estaran todos los desayunos.*/ 
+export const desayunosHuevos=[
+    {
+        title: "Huevos horneados (¡Desayuno increíblemente fácil para cualquier día!)",
+        Categoria:"Aperitivos",
+        subCategoria:"Canapes y Bruschettas",
+        src: "https://bakeitwithlove.com/wp-content/uploads/2022/05/Baked-Eggs-h-360x360.jpg.webp",
+        ingredientes:"Salmón fresco (lingotes limpios) 200 g Melón (sin piel ni semillas) 200 g Escamas de sal al gusto Aceite de oliva virgen extra para cocinar el pescadoLechugas mezcladas para servir",
+        dificultad:"Facil",
+        Tiempo:"Tiempo total 15 m Elaboración 10 m Cocción 5 m",
+        elaboracion:"Una vez tengamos el lingote de pescado listo, -recomiendo un tamaño aproximado de 10 cm de largo y 2 de grosor-, podemos calentar la parrilla y dorarlo ligeramente, dejando que se cocine un minuto por cada una de sus cuatro caras. Cortamos el melón en trozos que tengan un tamaño muy similar al de los del salmón. Para montar el plato, cortamos el lingote de salmón en tacos y los ensartamos con los tacos de melón en palitos de madera. Colocamos las brochetas sobre una cama de lechugas variadas y sazonamos con unos cristalitos de sal en escamas."
+    },
+    {
+        title: "Huevos Revueltos",
+        src: "https://bakeitwithlove.com/wp-content/uploads/2021/12/scrambled-eggs-sq-300x300.jpg.webp"
+    },
+    {
+        title: "Chorizo ​​y Huevos (Huevos con Chorizo)",
+        src: "https://bakeitwithlove.com/wp-content/uploads/2022/06/chorizo-eggs-sq-300x300.jpg.webp"
+    },
+    {
+        title: " HUEVOS REVUELTOS CON CREMA AGRIA",
+        src: "https://bakeitwithlove.com/wp-content/uploads/2022/02/sour-cream-scambled-eggs-sq1-300x300.jpg.webp"
+    },
+    {
+        title: "COPAS DE HUEVO DE PAPA HASH BROWN",
+        src: "https://bakeitwithlove.com/wp-content/uploads/2020/05/Hash-Brown-Egg-Cups-lg-sq-300x300.jpg.webp"
+    },
+]
 
+export const desayunosPancekesWaffes=[
+    {
+        title: "Waffles de Multigrano con Nectarinas",
+        Categoria:"Aperitivos",
+        subCategoria:"Canapes y Bruschettas",
+        src: "https://www.elmejornido.com/sites/g/files/jgfbjl316/files/styles/gdn_recipe_cards_ii/public/recipe-thumbnail/84863-2020_03_18T11_56_41_mrs_ImageRecipes_146406lrg.jpg.webp?itok=TPHkmh1V",
+        ingredientes:"Salmón fresco (lingotes limpios) 200 g Melón (sin piel ni semillas) 200 g Escamas de sal al gusto Aceite de oliva virgen extra para cocinar el pescadoLechugas mezcladas para servir",
+        dificultad:"Facil",
+        Tiempo:"Tiempo total 15 m Elaboración 10 m Cocción 5 m",
+        elaboracion:"Una vez tengamos el lingote de pescado listo, -recomiendo un tamaño aproximado de 10 cm de largo y 2 de grosor-, podemos calentar la parrilla y dorarlo ligeramente, dejando que se cocine un minuto por cada una de sus cuatro caras. Cortamos el melón en trozos que tengan un tamaño muy similar al de los del salmón. Para montar el plato, cortamos el lingote de salmón en tacos y los ensartamos con los tacos de melón en palitos de madera. Colocamos las brochetas sobre una cama de lechugas variadas y sazonamos con unos cristalitos de sal en escamas."
+    },
+    {
+        title: "Panqueques de Avena y Chocolate",
+        src: "https://www.elmejornido.com/sites/g/files/jgfbjl316/files/styles/gdn_recipe_cards_ii/public/recipe-thumbnail/96408-2020_04_29T15_09_17_mrs_ImageRecipes_146425lrg.jpg.webp?itok=4AVF-6Gx"
+    },
+    {
+        title: "Panqueques Fáciles de Canela y Vainilla",
+        src: "https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/gdn_recipe_cards_ii/public/thumbnail/98180-2020_03_02T09_15_03_mrs_ImageRecipes_140471lrg.jpg.webp?itok=lN4opnBF"
+    },
+]
+export const desayunosTostadasBolleria=[
+    {
+        title: "tostada de aguacate con salmón humado y semillas de sésamo negro",
+        Categoria:"Aperitivos",
+        subCategoria:"Canapes y Bruschettas",
+        src: "https://www.gastronosfera.com/sites/default/files/uploads/2020/01/tostada_de_aguacate_con_salmon_humado.jpg",
+        ingredientes:"Salmón fresco (lingotes limpios) 200 g Melón (sin piel ni semillas) 200 g Escamas de sal al gusto Aceite de oliva virgen extra para cocinar el pescadoLechugas mezcladas para servir",
+        dificultad:"Facil",
+        Tiempo:"Tiempo total 15 m Elaboración 10 m Cocción 5 m",
+        elaboracion:"Una vez tengamos el lingote de pescado listo, -recomiendo un tamaño aproximado de 10 cm de largo y 2 de grosor-, podemos calentar la parrilla y dorarlo ligeramente, dejando que se cocine un minuto por cada una de sus cuatro caras. Cortamos el melón en trozos que tengan un tamaño muy similar al de los del salmón. Para montar el plato, cortamos el lingote de salmón en tacos y los ensartamos con los tacos de melón en palitos de madera. Colocamos las brochetas sobre una cama de lechugas variadas y sazonamos con unos cristalitos de sal en escamas."
+    },
+    {
+        title: "TOSTADAS CON AGUACATE",
+        src: "https://www.elmueble.com/medio/2020/01/14/tostadas-con-aguacate_00000000_230215171210_1037x1200.jpg"
+    },
+    {
+        title: "Tostadas de plátano con mantequilla de cacahuete",
+        src: "https://www.antojoentucocina.com/wp-content/uploads/2023/04/tostadas-platano-6-683x1024.jpg"
+    },
+    {
+        title: "Tostadas de queso crema y pepino",
+        src: "https://www.antojoentucocina.com/wp-content/uploads/2023/04/tostada-pepino-2-683x1024.jpg"
+    },
+    {
+        title: "Tostadas de queso de cabra con pera, miel y nueces",
+        src: "https://www.antojoentucocina.com/wp-content/uploads/2023/04/tostada-pera-queso-cabra-3-683x1024.jpg"
+    },
+]
 /*Aqui estaran todas las entradas.*/ 

@@ -209,18 +209,7 @@ function Menu() {
                                                         >
                                                             Pancakes y waffles
                                                         </Link>
-                                                    </li>
-                                                    <li className="m-0">
-                                                        <hr className="dropdown-divider m-0" />
-                                                    </li>
-                                                    <li>
-                                                        <Link
-                                                            className="dropdown-item  pt-0 pb-0"
-                                                            to="/categoria/desayunos/pinchos"
-                                                        >
-                                                            Pinchos y brochetas
-                                                        </Link>
-                                                    </li>
+                                                    </li>                                                  
                                                     <li className="m-0">
                                                         <hr className="dropdown-divider m-0" />
                                                     </li>
